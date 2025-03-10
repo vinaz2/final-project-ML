@@ -5,10 +5,13 @@ Create a virtual pet simulator where users can take care of digital pets through
 Features:
 
 a. display_pet(status: dict) -> none
+
 Print the pet's current ASCII image and state (e.g., hungry, happy) according to the pet's status dictionary.
 
 B. handle_interaction(action: str, pet: dict) -> dict
+
 Update the pet's status after the user action (for example, feeding reduces hunger) and return the modified state.
 
 c. save_or_load_progress(filename: str, pet: dict = None) -> dict
+
 Save the pet's data to a JSON file or load it, returning the pet's state to continue the game.
