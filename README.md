@@ -6,5 +6,7 @@ Create a virtual art gallery where users can explore different rooms filled with
 Features: 
  
 a.Display Art: The ability to display art galleries, allowing users to browse through different rooms or categories. 
+
 b.Artwork Details: A feature that displays detailed information about selected artworks, including artist biographies and historical background. 
+
 c.Recommendation engine: A function that recommends new artwork to users based on their preferences and browsing history.
