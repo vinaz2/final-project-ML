@@ -15,3 +15,9 @@ Update the pet's status after the user action (for example, feeding reduces hung
 c. save_or_load_progress(filename: str, pet: dict = None) -> dict
 
 Save the pet's data to a JSON file or load it, returning the pet's state to continue the game.
+
+I am going to add two functions later:
+1.	Achievements and Quests: Add quests or achievements that provide goals and rewards for the player.
+2.	Multiple pet management
+
+
