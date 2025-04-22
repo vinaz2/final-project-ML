@@ -136,7 +136,6 @@ def save_or_load_pet_data(filename, pet=None):
         try:
             with open(filename, "w") as file:
                 json.dump(pet, file)
-            print(f"Game saved to {filename}")
             return pet
         except Exception as error:
             print(f"Error saving game: {error}")
@@ -149,7 +148,6 @@ def save_or_load_pet_data(filename, pet=None):
                     loaded_pet["last_play_time"] = float(loaded_pet["last_play_time"])
                 if "creation_time" in loaded_pet:
                     loaded_pet["creation_time"] = float(loaded_pet["creation_time"])
-            print(f"Game loaded from {filename}")
             return loaded_pet
         except FileNotFoundError:
             print("No saved game found. Starting a new game.")
@@ -173,7 +171,8 @@ def update_pet_conditions(pet):
     creation_time = pet.get("creation_time", current_time)
     last_play_time = pet.get("last_play_time", current_time)
 
-
+    # Energy decreases over time, 5 per second
+    pet["energy"] = max(0, pet["energy"] - 5)
     # Hunger increases over time
     pet["hunger"] = min(100, pet["hunger"] + 5)
 
@@ -182,7 +181,7 @@ def update_pet_conditions(pet):
         pet["mood"] = "sick"
     elif pet["hunger"] >= 90:
         pet["mood"] = "hungry"
-    elif pet["energy"] <= 10:
+    elif pet["energy"] <= 30:
         pet["mood"] = "sleepy"
         print(f"{pet['name']} is sleepy!")
     else:
@@ -235,7 +234,8 @@ def manage_pets():
         print("2. Interact with a pet")
         print("3. View all pets' status")
         print("4. Show badges")
-        print("5. Exit")
+        print("5. Delete a pet")
+        print("6. Exit")
         choice = input("Enter your choice: ")
 
         if choice == "1":
@@ -263,9 +263,9 @@ def manage_pets():
                     elapsed_time = current_time - last_update_time
 
                     # Update energy and hunger in real - time
-                    energy_decrease = int(elapsed_time // 5)
+                    energy_decrease = int(elapsed_time * 6)
                     pet["energy"] = max(0, pet["energy"] - energy_decrease)
-                    pet["hunger"] = min(100, pet["hunger"] + int(elapsed_time * 0.5))
+                    pet["hunger"] = min(100, pet["hunger"] + int(elapsed_time * 2))
                     pet = update_pet_conditions(pet)
                     last_update_time = current_time
 
@@ -296,6 +296,14 @@ def manage_pets():
         elif choice == "4":
             print(f"Total badges: {badges}")
         elif choice == "5":
+            pet_name = input("Enter the name of the pet you want to delete: ")
+            pet_filename = os.path.join(pets_folder, f"{pet_name}.json")
+            if os.path.exists(pet_filename):
+                os.remove(pet_filename)
+                print(f"Pet {pet_name} has been deleted.")
+            else:
+                print(f"Pet {pet_name} not found.")
+        elif choice == "6":
             print("Goodbye!")
             break
         else:
