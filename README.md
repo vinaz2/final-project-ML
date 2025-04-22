@@ -16,8 +16,15 @@ c. save_or_load_progress(filename: str, pet: dict = None) -> dict
 
 Save the pet's data to a JSON file or load it, returning the pet's state to continue the game.
 
-I am going to add two functions later:
-1.	Achievements and Quests: Add quests or achievements that provide goals and rewards for the player.
-2.	Multiple pet management
+I am going to:
+1\ make the noticing message of all pets happy immediately printed on the terminal rather than the user opting to check status (improving the game fun)
+
+2\ make the energy and hunger value varying in real-time, regardless of any layers the user is in. 
+
+3\ make the "your pet xxx is hungry/sad/sleepy" printing message right appear on the screen when the user enter "back"
+
+4\ adjust the setting of the time that energy and hunger changing so then winning the game (all pets happy) is at the same time challenging but doable. 
+
+
 
 
