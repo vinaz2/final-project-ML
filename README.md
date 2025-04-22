@@ -17,13 +17,12 @@ c. save_or_load_progress(filename: str, pet: dict = None) -> dict
 Save the pet's data to a JSON file or load it, returning the pet's state to continue the game.
 
 I am going to:
-1\ make the noticing message of all pets happy immediately printed on the terminal rather than the user opting to check status (improving the game fun)
 
-2\ make the energy and hunger value varying in real-time, regardless of any layers the user is in. 
+1\ add pictures for pets and make them refresh its spot in terminal window as soon as the user chose a certain pet to interact with, once being caught then any actions become available
 
-3\ make the "your pet xxx is hungry/sad/sleepy" printing message right appear on the screen when the user enter "back"
+2\ make the hunder and energy values changing in real time (?)
 
-4\ adjust the setting of the time that energy and hunger changing so then winning the game (all pets happy) is at the same time challenging but doable. 
+3\ adjust the setting of the time that energy and hunger changing so then winning the game (all pets happy) is at the same time challenging but doable. 
 
 
 
