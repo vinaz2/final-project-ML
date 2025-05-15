@@ -1,0 +1,6 @@
+pip install tensorflow
+pip install pillow
+pip install scipy
+pip install pygame
+
+run the train_EfficientNetBO.py to get the model downloaded in the local machine so then the main python file could run as supposed. 

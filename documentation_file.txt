@@ -1,0 +1,26 @@
+My project is called Kitty Puppy Snakelet. It is an interative program to play with that user could pet any virtual cats, dogs or snakes from any pictures they find online and input, for those children are having allergies/cannot be allowed to pet to pets but still wish to pet a cat or dog. 
+
+Depending on the category of the animal in the picture the user inputs, with the technology in machine learning, the program will recognize between dogs and cats and continue to each category's contextual functions that user could call to the dog, or cat. 
+
+E.g. If the user inputs a cat, the functions that user will end up playing with are collecting the dropped furs, cleaning the cat litters, and feeding kitty treats; if the user inputs a dog, the functions that user could play with would be feed the bones, hug the dog and walk the dog. 
+
+
+The things I did for pursuing extra credit up to 5%: 
+
+1/This project blend a significant concept in machine learning since the program categorize the specie of animal in the input image without the user explicitly telling the program. I self-studied the Andrew Ng's online Stanford series of courses on Coursera to go through the concepts in supervised learning and convolutional layers. I downloaded and run the existing cats vs. dogs training code for the categorization model after preparing the dataset myself, thus gaining the model to apply in the main file. 
+
+2/To get extended and try to be have more original efforts, I changed the training code line by line to make it capable do categorization on three classes instead of two.
+
+3/To improve the training efficiency for those pictures that are vague or too bright, I did changes to the dataset I used to train the neural network (manully add some extremely blurry pictures to each class). I changed the model (from resnet to EfficientNetB0), the number of freezing layers in the convolutional neural network and also the way to augument the images. 
+
+4/I learned python knowledge in changing website's API to download bulk of considerably blurry cats, dogs and snakes pictures systematically. I also learned some image augumentation tools to help generate more data images that are vague. s
+
+
+
+
+
+
+
+
+
+
