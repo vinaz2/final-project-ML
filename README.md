@@ -1,28 +1,29 @@
-Project Description:
+My project is called Kitty Puppy Snakelet. It is an interative program to play with that user could pet any virtual cats, dogs or snakes from any pictures they find online, for those children are having allergies/cannot be allowed to pet to pets but still wish to pet a cat, snake or dog. The pygame is interactive as it will have the sounds varying and also the message line changing when the user did any actions with the pet. 
 
-Create a virtual pet simulator where users can take care of digital pets through a command line interface (CLI). Pets' mood, hunger, and energy levels change over time and are represented by dynamic ASCII graphs (e.g.,(=^‥^=) for happy,   (=；ェ；=)  means sick). Users can feed, play or rest their pets to keep them healthy and save/load progress via JSON files. Optional features include mini-games or random events (e.g., "Found a toy!"). ). Built using core Python libraries such as json and time.
+Depending on the category of the animal in the picture the user inputs, with the concept of multiclass classification in machine learning, the program will recognize between dogs, snakes, and cats and continue to each category's contextual functions that user could call to the dog, the snake or cat. 
 
-Features:
 
-a. display_pet(status: dict) -> none
+E.g. If the user inputs a cat image, the functions that user will end up playing with are collecting the dropped furs, cleaning the cat litters, and feeding kitty treats; if the user inputs a dog, the functions that user could play with would be feed the bones, hug the dog and walk the dog; if the user inputs a snake image, the fucntions that user could play with would be feed rats, clean ecdysis, and curl up gently. 
 
-Print the pet's current ASCII image and state (e.g., hungry, happy) according to the pet's status dictionary.
+Three main original functions are def run_game(img_path, pet_type), def classify_pet, and def choose_image_file().
 
-B. handle_interaction(action: str, pet: dict) -> dict
 
-Update the pet's status after the user action (for example, feeding reduces hunger) and return the modified state.
+The things I did for pursuing extra credit up to 5%: 
 
-c. save_or_load_progress(filename: str, pet: dict = None) -> dict
+1/This project blend a significant concept in machine learning since the program categorize the specie of animal in the input image without the user explicitly telling the program. I self-studied the Andrew Ng's online Stanford series of courses on Coursera to go through the concepts in supervised learning and convolutional layers. 
 
-Save the pet's data to a JSON file or load it, returning the pet's state to continue the game.
+2/To have more original efforts, based on the existing training code of cats. vs dogs categorization, I changed this training code to make it capable do categorization on three classes instead of two.
 
-I am going to:
+3/To improve my model's efficiency for those pictures that are vague or too bright, I not only prepare the dataset from kaggle but also did changes to the dataset I used to train the neural network (manully add some extremely blurry pictures to each class using my original bulk_download.py to change the unsplash. com API after learning python knowledge in changing website's API to download bulk of considerably blurry cats, dogs and snakes pictures systematically.). 
 
-1\ add pictures for pets and make them refresh its spot in terminal window as soon as the user chose a certain pet to interact with, once being caught then any actions become available
+4/I changed the pretrained CNN been used in the training script (from resnet to EfficientNetB0), the number of freezing layers in the convolutional neural network and also the parameters to augument the images. I did many times of adjusting to make it right now could differ cats, dogs and snakes images even they are pretty vague.
 
-2\ make the hunder and energy values changing in real time (?)
 
-3\ adjust the setting of the time that energy and hunger changing so then winning the game (all pets happy) is at the same time challenging but doable. 
+
+
+
+
+
 
 
 
