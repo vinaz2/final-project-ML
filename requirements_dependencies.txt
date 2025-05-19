@@ -2,5 +2,8 @@ pip install tensorflow
 pip install pillow
 pip install scipy
 pip install pygame
+pip install albumentations opencv-python
 
-run the train_EfficientNetBO.py to get the model downloaded in the local machine so then the main python file could run as supposed. 
+back-up: please run the train_EfficientNetBO_three.py to get the model downloaded in the local machine so then the main python file could run as supposed, it might take 15 mins. (I am not allowed to upload the model file directly, because the file is too big.)
+
+
