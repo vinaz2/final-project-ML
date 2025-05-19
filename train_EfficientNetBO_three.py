@@ -1,6 +1,9 @@
 """
+This is the training script to get the classification model.
+
 Attribution: this script goes along the blog post:
 Keras Cats Dogs Tutorial (https://jkjung-avt.github.io/keras-tutorial/); 
+
 I did changes to improve accuracy and changed its functionality from 
 categorizing between two classes to three.
 """
