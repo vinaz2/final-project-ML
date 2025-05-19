@@ -13,6 +13,11 @@ sudo apt install git-lfs     # if you are Ubuntu/Debian
 git lfs install
 
 
+reminder: please download all the files at one time by git clone the repo directly, rather than 
+downloading the raw files from github repo, because one of these files, the model file, is very big.)
+
+
+
 
 
 
