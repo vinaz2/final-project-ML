@@ -19,7 +19,7 @@ and feed the treats); dogs: Feed Bone", "Walk Dog", "Hug Dog"; and snakes: "Feed
 "Curl Up Gently".
 
 3/when you click any of the actions to interact with the pet, the printing line on top of the 
-interface will change to "I love you, I will always be your side, my human.", with the sound of pets varying 
+interface will change to "I love you, I will always be your side, my human.", with a happier sound of pets different
 from before (except snake).
 
 4/close the pygame, and when you input another image, the pygame will start a new one of the new image. 
