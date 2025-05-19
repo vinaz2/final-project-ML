@@ -23,6 +23,6 @@ interface will change to "I love you, I will always be your side, my human.", wi
 from before (except snake).
 
 4/close the pygame, and when you input another image, the pygame will start a new one of the new image. 
-"""
+
 
 
