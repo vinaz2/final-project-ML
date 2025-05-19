@@ -11,8 +11,8 @@ Three main original functions are def run_game(img_path, pet_type), def classify
 
 flow:
 1/install all the dependencies on your terminal (see requirements_dependencies.txt)
-2/download the model file(model-resnet50-final3.h5), playtrack files(all the files ending with wav.)
-3/run the try5.py (main file)
+2/download the model file(model-resnet50-final3.h5), playtrack files(the six files ending with wav.)
+3/run the main_try5.py (main file)
 
 
 The things I did for pursuing extra credit up to 5%: 
