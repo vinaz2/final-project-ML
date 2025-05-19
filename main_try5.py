@@ -167,6 +167,8 @@ def run_game(img_path, pet_type):
                     if rect.collidepoint(event.pos):
                         display_message = "I love you. I will always be by your side, my human."
                         action_taken = True
+                        if start_sound:
+                            start_sound.stop()  # then not overlap
                         if action_sound:
                             action_sound.play()
 
