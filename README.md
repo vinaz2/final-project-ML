@@ -11,9 +11,9 @@ E.g. If the user inputs a cat image, the functions that user will end up playing
 
 ***Flow***:
 
-1/install all the dependencies on your terminal (see requirements_dependencies.txt)
+1/install all the dependencies on your terminal (see ***requirements_dependencies.txt***)
 
-2/git clone this repo (typing command "git clone https://github.com/vinaz2/final-project-ml" 
+2/git clone this repo (typing command ***git clone https://github.com/vinaz2/final-project-ml***
 
 (There is a big file, the model file, so then you should only get the files by git clone. Downloading the files directly from github website will cause the model file to be html format, not the Hierarchical Data Format that the my model file is actually of.)
 
