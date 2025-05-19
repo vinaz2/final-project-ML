@@ -10,8 +10,8 @@ Three main original functions are def run_game(img_path, pet_type), def classify
 
 
 flow:
-1/install all the dependencies on your terminal
-2/download the model file(model-resnet50-final3.h5), playtrack files(wav.)
+1/install all the dependencies on your terminal (see requirements_dependencies.txt)
+2/download the model file(model-resnet50-final3.h5), playtrack files(all the files ending with wav.)
 3/run the try5.py (main file)
 
 back-up: if there is no model file, sorry, please run the train_EfficientNetBO_three.py to get the model downloaded in your local machine so then the main python file could run as supposed, it might take 15 mins. (I am not allowed to upload the model file directly, because the file is too big.)
