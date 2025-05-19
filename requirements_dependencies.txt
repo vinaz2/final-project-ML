@@ -4,6 +4,13 @@ pip install scipy
 pip install pygame
 pip install numpy
 pip install albumentations opencv-python
+# Only once:
+brew install git-lfs         # macOS (Homebrew)
+choco install git-lfs        # Windows (Chocolatey)
+sudo apt install git-lfs     # Ubuntu/Debian
+
+git lfs install
+
 
 
 
