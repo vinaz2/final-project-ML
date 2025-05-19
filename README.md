@@ -21,7 +21,7 @@ E.g. If the user inputs a cat image, the functions that user will end up playing
 
 (Running it might take a bit of time for the drop-drag pops up, thanks for the patience~~~)
 
-4. find a picture of single cat/dog/snake you like from internet to input;
+4. find a picture of single cat/dog/snake you like from internet to input; in addition, you can also play with the vague images examples I provide in the repo.
 
 5. pygame got started.
 
