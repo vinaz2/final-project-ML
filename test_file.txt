@@ -1,11 +1,11 @@
-"""flow:
+flow (steps to take):
 
 1/install all the dependencies on your terminal
 2/download the model file(model-resnet50-final3.h5), playtrack files(wav.)
 3/run the try5.py (main file)
 
 
-How to test (at least 3 ways)
+How to test (at least 3 ways):
 
 
 1/There will pop up a drop box for you to input any image that has a single cat/snake/dog on it, 
