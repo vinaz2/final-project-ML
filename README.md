@@ -22,7 +22,7 @@ E.g. If the user inputs a cat image, the functions that user will end up playing
 
 ***The things I did for pursuing extra credit up to 5%***:
 
-1. This project blend a significant concept in machine learning since the program categorize the specie of animal in the input image without the user explicitly telling the program. I self-studied the Andrew Ng's online Stanford series of courses on Coursera to go through the concepts in supervised learning and convolutional layers. 
+1. This project blends a significant concept in machine learning since the program categorize the specie of animal in the input image without the user explicitly telling the program. I self-studied the Andrew Ng's online Stanford series of courses on Coursera to go through the concepts in supervised learning and convolutional layers. 
 
 2. To have more original efforts, based on the existing training code of cats. vs dogs categorization, I changed this training code to make it capable do categorization on three classes instead of two.
 
