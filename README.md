@@ -9,26 +9,26 @@ E.g. If the user inputs a cat image, the functions that user will end up playing
 ***Three main original functions*** are def run_game(img_path, pet_type), def classify_pet, and def choose_image_file().
 
 
-***Flow***:
+***Flow (Steps to run my program)***:
 
-1/install all the dependencies on your terminal (see ***requirements_dependencies.txt***)
+1. install all the dependencies on your terminal (see requirements_dependencies.txt)
 
-2/git clone this repo (typing command ***git clone https://github.com/vinaz2/final-project-ml***
+2. git clone this repo (typing command "git clone https://github.com/vinaz2/final-project-ml")
 
 (There is a big file, the model file, so then you should only get the files by git clone. Downloading the files directly from github website will cause the model file to be html format, not the Hierarchical Data Format that the my model file is actually of.)
 
-3/run the main_try5.py (main file)
+3. run the main_try5.py (main file)
 
 
 ***The things I did for pursuing extra credit up to 5%***:
 
-1/This project blend a significant concept in machine learning since the program categorize the specie of animal in the input image without the user explicitly telling the program. I self-studied the Andrew Ng's online Stanford series of courses on Coursera to go through the concepts in supervised learning and convolutional layers. 
+1. This project blend a significant concept in machine learning since the program categorize the specie of animal in the input image without the user explicitly telling the program. I self-studied the Andrew Ng's online Stanford series of courses on Coursera to go through the concepts in supervised learning and convolutional layers. 
 
-2/To have more original efforts, based on the existing training code of cats. vs dogs categorization, I changed this training code to make it capable do categorization on three classes instead of two.
+2. To have more original efforts, based on the existing training code of cats. vs dogs categorization, I changed this training code to make it capable do categorization on three classes instead of two.
 
-3/To improve my model's efficiency for those pictures that are vague or too bright, I not only prepare the dataset from kaggle but also did changes to the dataset I used to train the neural network (manully add some extremely blurry pictures to each class using my original bulk_download.py to change the unsplash. com API after learning python knowledge in changing website's API to download bulk of considerably blurry cats, dogs and snakes pictures systematically.). 
+3. To improve my model's efficiency for those pictures that are vague or too bright, I not only prepare the dataset from kaggle but also did changes to the dataset I used to train the neural network (manully add some extremely blurry pictures to each class using my original bulk_download.py to change the unsplash. com API after learning python knowledge in changing website's API to download bulk of considerably blurry cats, dogs and snakes pictures systematically.). 
 
-4/I changed the pretrained CNN been used in the training script (from resnet to EfficientNetB0), the number of freezing layers in the convolutional neural network and also the parameters to augument the images. I did many times of adjusting to make it right now could differ cats, dogs and snakes images even they are pretty vague.
+4. I changed the pretrained CNN been used in the training script (from resnet to EfficientNetB0), the number of freezing layers in the convolutional neural network and also the parameters to augument the images. I did many times of adjusting to make it right now could differ cats, dogs and snakes images even they are pretty vague.
 
 
 
