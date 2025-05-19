@@ -1,4 +1,4 @@
-My project is called Kitty Puppy Snakelet. It is an interative program to play with that user could pet any virtual cats, dogs or snakes from any pictures they find online, for those children are having allergies/cannot be allowed to pet to pets but still wish to pet a cat, snake or dog. The pygame is interactive as it will have the sounds varying (except the snake! Because snake does not have many feelings to their human owners, sadly) and also the message line changing when the user did any actions with the pet. 
+My project is called ***Kitty Puppy Snakelet***. It is an interative program to play with that user could pet any virtual cats, dogs or snakes from any pictures they find online, for those children are having allergies/cannot be allowed to pet to pets but still wish to pet a cat, snake or dog. The pygame is interactive as it will have the sounds varying (except the snake! Because snake does not have many feelings to their human owners, sadly) and also the message line changing when the user did any actions with the pet. 
 
 
 Depending on the category of the animal in the picture the user inputs, with the concept of multiclass classification in machine learning, the program will recognize between dogs, snakes, and cats and continue to each category's contextual functions that user could call to the dog, the snake or cat. 
@@ -6,16 +6,20 @@ Depending on the category of the animal in the picture the user inputs, with the
 
 E.g. If the user inputs a cat image, the functions that user will end up playing with are collecting the dropped furs, cleaning the cat litters, and feeding kitty treats; if the user inputs a dog, the functions that user could play with would be feed the bones, hug the dog and walk the dog; if the user inputs a snake image, the fucntions that user could play with would be feed rats, clean ecdysis, and curl up gently. 
 
-Three main original functions are def run_game(img_path, pet_type), def classify_pet, and def choose_image_file().
+***Three main original functions*** are def run_game(img_path, pet_type), def classify_pet, and def choose_image_file().
 
 
-flow:
+***Flow***:
+
 1/install all the dependencies on your terminal (see requirements_dependencies.txt)
-2/download the model file(model-resnet50-final3.h5), playtrack files(the six files ending with wav.)
+
+2/download the main file (main_try5.py), model file(model-resnet50-final3.h5), playtrack files(the six files ending with wav.)
+
 3/run the main_try5.py (main file)
 
 
-The things I did for pursuing extra credit up to 5%: 
+***The things I did for pursuing extra credit up to 5%***:
+
 1/This project blend a significant concept in machine learning since the program categorize the specie of animal in the input image without the user explicitly telling the program. I self-studied the Andrew Ng's online Stanford series of courses on Coursera to go through the concepts in supervised learning and convolutional layers. 
 
 2/To have more original efforts, based on the existing training code of cats. vs dogs categorization, I changed this training code to make it capable do categorization on three classes instead of two.
