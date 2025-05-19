@@ -36,34 +36,27 @@ SOUND_ACTIONS = {
 }
 
 
-# to load the pre-trained model
+# to load the pre-trained model (I changed the Resnet to EfficientNetB0)
 def load_trained_model():
     try:
         print("Loading the pre-trained model...")
         return load_model(MODEL_PATH)
     except Exception as e:
-        print(f"Error loading the model: {e}")
+        print(f"Error loading the model: {e}, please go download the model-resnet50-final3")
         return None
 
 
 # Classify the pet in the given image
 def classify_pet(model, img_path):
-    if model is None:
-        print("Model is not loaded properly. Cannot classify the image.")
-        return None
-    try:
-        print(f"Loading and preprocessing the image: {img_path}")
-        img = image.load_img(img_path, target_size=(224, 224))
-        img_array = image.img_to_array(img)
-        img_array = np.expand_dims(img_array, axis=0)
-        img_array = preprocess_input(img_array)
-        print("Making a prediction on the class of image...")
-        prediction = model.predict(img_array)
-        class_idx = np.argmax(prediction)
-        return class_idx
-    except Exception as e:
-        print(f"Error classifying the image: {e}")
-        return None
+    print(f"Loading and processing the image: {img_path}")
+    img = image.load_img(img_path, target_size=(224, 224))
+    img_array = image.img_to_array(img)
+    img_array = np.expand_dims(img_array, axis=0)
+    img_array = preprocess_input(img_array)
+    print("Making a prediction on the class of pet type...")
+    prediction = model.predict(img_array)
+    class_idx = np.argmax(prediction)
+    return class_idx
 
 
 # set the background image for the pygame
@@ -107,7 +100,7 @@ def run_game(img_path, pet_type):
     elif pet_type == "snake":
         available_actions = snake_actions
     else:
-        print(f"Unknown pet type: {pet_type}. Please select a cat/dog/snake image")
+        print(f"Unknown pet type: {pet_type}. Please select a cat/dog/snake image.")
 
 
     # action buttons
@@ -123,14 +116,12 @@ def run_game(img_path, pet_type):
 
     # the starting interface of pygame (fade-in effect)
     display_message = "I am lonely, I need you."
-    action_performed = False
+    action_taken = False
 
     fade_surface = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT))
     fade_surface.fill((0, 0, 0))
     alpha_value = 255
 
-
-    # Main game loop
     game_running = True
     animation_start_time = time.time()
 
@@ -175,7 +166,7 @@ def run_game(img_path, pet_type):
                 for rect, label in action_buttons:
                     if rect.collidepoint(event.pos):
                         display_message = "I love you. I will always be by your side, my human."
-                        action_performed = True
+                        action_taken = True
                         if action_sound:
                             action_sound.play()
 
@@ -186,7 +177,7 @@ def run_game(img_path, pet_type):
 def choose_image_file():
     root = tk.Tk()
     root.withdraw()
-    print("Opening the finder dialog to choose an image...")
+    print("Opening the drop-drag to choose an image...")
     file_path = filedialog.askopenfilename(
         title="Choose an image of a cat, dog, or snake",
         filetypes=[("Image files", "*.jpg *.jpeg *.png *.bmp")]
@@ -207,8 +198,8 @@ def main():
     if pet_class_index is None:
         return
 
-    pet_type_mapping = {0: "cat", 1: "dog", 2: "snake"}
-    pet_type = pet_type_mapping.get(pet_class_index, "unknown")
+    pet_type_classes = {0: "cat", 1: "dog", 2: "snake"}
+    pet_type = pet_type_classes.get(pet_class_index, "unknown")
     print(f"The image is classified as {pet_type}.")
     run_game(image_path, pet_type)
 
