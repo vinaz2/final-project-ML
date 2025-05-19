@@ -11,13 +11,20 @@ E.g. If the user inputs a cat image, the functions that user will end up playing
 
 ***Flow (Steps to run my program)***:
 
-1. install all the dependencies on your terminal (see requirements_dependencies.txt)
+1. install all the dependencies on your terminal (see requirements_dependencies.txt);
 
-2. git clone this repo (typing command "git clone https://github.com/vinaz2/final-project-ml")
+2. git clone this repo (typing command "git clone https://github.com/vinaz2/final-project-ml");
 
 (There is a big file, the model file, so then you should only get the files by git clone. Downloading the files directly from github website will cause the model file to be html format, not the Hierarchical Data Format that the my model file is actually of.)
 
-3. run the main_try5.py (main file)
+3. run the main_try5.py (this is the main file);
+
+(Running it might take a bit of time for the drop-drag pops up, thanks for the patience~~~)
+
+4. find a picture of single cat/dog/snake you like from internet to input;
+
+5. pygame got started.
+
 
 
 ***The things I did for pursuing extra credit up to 5%***:
