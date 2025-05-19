@@ -1,3 +1,6 @@
+"""This file is for downloading the blurry images of snakes, cats and dogs to improve the performance of the model, not related with 
+the main program running and grading. This file is not original."""
+
 import requests
 import os
 import time
