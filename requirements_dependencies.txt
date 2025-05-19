@@ -2,6 +2,7 @@ pip install tensorflow
 pip install pillow
 pip install scipy
 pip install pygame
+pip install numpy
 pip install albumentations opencv-python
 
 
