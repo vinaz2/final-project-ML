@@ -1,6 +1,9 @@
 """
 This script goes along my blog post:
 'Keras Cats Dogs Tutorial' (https://jkjung-avt.github.io/keras-tutorial/)
+Running this file could directly yield the "a", which is in the logistics regression, the probability of the image
+to be cat/dog/snake. This file is only for me to test out the efficiency of the model, not essential with running 
+the program."
 """
 
 
